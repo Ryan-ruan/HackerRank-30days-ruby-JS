@@ -60,4 +60,14 @@ process.stdin.on('end', () => {
 
 function main(mealCost, tipPercent, taxPercent) {
   
+  // Use console.log() to print to stdout    
+
+  var tip = mealCost * tipPercent/100;
+  var tax = mealCost * taxPercent/100;
+
+  
+  let totalCost = mealCost + tip + tax;
+  let cost = Math.round(totalCost);
+  console.log("The total meal cost is " + cost + " dollars.");
+  
 }
